@@ -1,0 +1,33 @@
+.reading-container{
+    margin-top: 27.5px;
+    margin-left: 20px   ;
+    border: 1px solid grey;
+    width: 411px;
+    padding: 8px;   
+    color: #6047EC;
+    background-color: rgb(248, 233, 233);
+    border-radius: 3px;
+}
+.reading-text{
+    width: 313px;  
+    padding: 2px 0px 2  px 4px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.bookmarks-container{
+    margin-top: 27.5px;
+    margin-left: 20px   ;
+    border: 1px solid grey;
+    width: 411px;
+    height: 1352px;
+    padding-left: 5px;
+    background-color: rgb(248, 244, 244);
+    border-radius: 3px;
+
+}
+.bookmark-text{
+    width: 243px;
+    height: 38px;
+    margin: 20px 0px 0px 15px;
+    font-weight: bold;
+}
