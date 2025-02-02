@@ -6,7 +6,7 @@ import Header from './components/Header/Header'
 function App() {
   const[bookmarks,setBookmarks]=useState([]);
   const[readingTime,setReadingTime]=useState(0);
-
+echo "# React-Knowledge-Cafe" >> README.md
 
   const handleBookmarks = blog =>{
     const newBookmarks = [...bookmarks,blog];
