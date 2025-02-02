@@ -5,8 +5,7 @@ import Booksmark from './components/Booksmark/Booksmark'
 import Header from './components/Header/Header'
 function App() {
   const[bookmarks,setBookmarks]=useState([]);
-  const[readingTime,setReadingTime]=useState(0);
-echo "# React-Knowledge-Cafe" >> README.md
+  const[readingTime,setReadingTime]=useState(0);git commit -m "first commit"
 
   const handleBookmarks = blog =>{
     const newBookmarks = [...bookmarks,blog];
