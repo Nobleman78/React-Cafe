@@ -3,7 +3,7 @@ import './Booksmark.css'
 import PropTypes from 'prop-types'
 const Booksmark = ({bookmarks,readingTime}) => {
     return (
-        <div>
+        <div className='hidden md:block'>
             <div className='reading-container'>
                 <h3 className="reading-text">Spent Time on Read : {readingTime} </h3>
             </div>

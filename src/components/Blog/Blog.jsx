@@ -4,7 +4,7 @@ import './Blog.css'
 const Blog = ({blog,handleBookmarks,handleMarkAsRead}) => {
     const{cover,title,author_img,author,reading_time,hashtags,id} = blog;
     return (
-        <div className='pt-3 mb-20'>
+        <div className='pt-3 mb-20 '>
             <img className="w-full mb-3" src={cover} alt="" />
             <div className="flex justify-between ">
                 <div className="flex ">
@@ -16,17 +16,17 @@ const Blog = ({blog,handleBookmarks,handleMarkAsRead}) => {
                 </div>
                 <div>
                     <span className="text-size">{reading_time} min read</span>
-                    <button className="ml-2" onClick={()=>handleBookmarks(blog)} ><CiBookmark /></button>
+                    <button className="ml-2 cursor-pointer" onClick={()=>handleBookmarks(blog)} ><CiBookmark /></button>
                 </div>
             </div>
-            <h3 className="text-2xl mt-3 mb-3   ">{title}</h3>
+            <h3 className="text-2xl mt-3 mb-3">{title}</h3>
             <p>
                 {
                     hashtags.map((hash, idx) => <span key={idx}><a href="">#{hash}</a> </span>)
                 }
             </p>
             <div>
-                <button onClick={()=>handleMarkAsRead(id,reading_time)} className="mt-3">Mark as read</button>
+                <button onClick={()=>handleMarkAsRead(id,reading_time)} className="mt-3 cursor-pointer">Mark as read</button>
             </div>
         </div>
       

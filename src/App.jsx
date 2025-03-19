@@ -5,7 +5,8 @@ import Booksmark from './components/Booksmark/Booksmark'
 import Header from './components/Header/Header'
 function App() {
   const[bookmarks,setBookmarks]=useState([]);
-  const[readingTime,setReadingTime]=useState(0);git commit -m "first commit"
+  const[readingTime,setReadingTime]=useState(0);
+
 
   const handleBookmarks = blog =>{
     const newBookmarks = [...bookmarks,blog];
@@ -25,7 +26,7 @@ function App() {
   return (
     <div>
 
-      <Header></Header>
+      <Header readingTime={readingTime} bookmarks={bookmarks}></Header>
       <div className='container'>
         <Blogs handleBookmarks = {handleBookmarks}handleMarkAsRead={handleMarkAsRead} ></Blogs>
         <Booksmark bookmarks={bookmarks}readingTime={readingTime} ></Booksmark>
